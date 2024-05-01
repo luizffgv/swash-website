@@ -1,16 +1,17 @@
-# Built website
-/dist/
-
 # NPM dependencies
 /node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Built website
+/dist/
+
+# Compiled library
+/lib/
+
+# Generated type definitions
+/types/
+
+# TypeScript build information
+*.tsbuildinfo
+
+# Packed npm package
+/*.tgz
