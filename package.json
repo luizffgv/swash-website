@@ -14,7 +14,7 @@
     "lucide-react": "^0.376.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "swash": "github:luizffgv/swash#f917377"
+    "swash": "github:luizffgv/swash#6bedd45"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
