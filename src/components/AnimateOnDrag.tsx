@@ -12,8 +12,9 @@ export interface AnimateOnDragProperties {
  * @param properties - Properties of the component.
  */
 export function AnimateOnDrag(properties: AnimateOnDragProperties) {
-  const { state } = useContext(DraggableContext);
-  const dragging = state === "dragging";
+  const {
+    states: { dragging },
+  } = useContext(DraggableContext);
 
   return (
     <div

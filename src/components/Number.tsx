@@ -13,8 +13,10 @@ export interface NumberProperties {
  * @param properties - Properties of the component.
  */
 export function Number(properties: NumberProperties) {
-  const { state, setPayload } = useContext(DraggableContext);
-  const dragging = state === "dragging";
+  const {
+    states: { dragging },
+    setPayload,
+  } = useContext(DraggableContext);
 
   useEffect(() => {
     setPayload(new AddPayload(properties.value));

@@ -8,8 +8,10 @@ import { SetPayload } from "../lib/payloads";
  * value of 0.
  */
 export function Clear() {
-  const { state, setPayload } = useContext(DraggableContext);
-  const dragging = state === "dragging";
+  const {
+    states: { dragging },
+    setPayload,
+  } = useContext(DraggableContext);
 
   useEffect(() => {
     setPayload(new SetPayload(0));

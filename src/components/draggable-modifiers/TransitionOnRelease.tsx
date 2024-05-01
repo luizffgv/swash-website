@@ -16,10 +16,11 @@ export interface TransitionOnReleaseProperties {
 export function TransitionOnRelease(properties: TransitionOnReleaseProperties) {
   const { children, duration = 500 } = properties;
 
-  const { state, lastDragPosition, setReturnedPromise } =
-    useContext(DraggableContext);
-  const dragging = state === "dragging";
-  const returning = state === "returning";
+  const {
+    states: { dragging, returning },
+    lastDragPosition,
+    setReturnedPromise,
+  } = useContext(DraggableContext);
 
   const resolveReturned = useRef<() => void>();
 
