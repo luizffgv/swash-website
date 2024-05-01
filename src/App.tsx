@@ -48,11 +48,13 @@ function App() {
                   setAccumulator((a) => a * payload.value);
               }}
             >
+              <TransitionOnRelease>
               <AnimateOnDrag>
                 <span className="ml-4 rounded-md bg-primary px-2 py-1 text-center font-bold text-white">
                   {accumulator}
                 </span>
               </AnimateOnDrag>
+              </TransitionOnRelease>
             </Draggable>
           </div>
         </div>
