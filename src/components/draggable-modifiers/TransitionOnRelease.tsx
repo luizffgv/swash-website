@@ -1,4 +1,4 @@
-import { DraggableContext } from "swash";
+import { DraggableContext, InnerDraggable } from "swash";
 import { useContext, useEffect, useRef } from "react";
 
 /** Properties for the {@link TransitionOnRelease} component. */
@@ -88,7 +88,7 @@ export function TransitionOnRelease(properties: TransitionOnReleaseProperties) {
           position: returning ? "absolute" : "static",
         }}
       >
-        {children}
+        <InnerDraggable>{children}</InnerDraggable>
       </div>
     </div>
   );

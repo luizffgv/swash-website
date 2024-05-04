@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DraggableContext } from "swash";
+import { DraggableContext, InnerDraggable } from "swash";
 
 /** Properties for the {@link AnimateOnDrag} component. */
 export interface AnimateOnDragProperties {
@@ -20,7 +20,7 @@ export function AnimateOnDrag(properties: AnimateOnDragProperties) {
     <div
       className={`transition ${dragging && "rotate-3 scale-110 [filter:drop-shadow(0_0_15px_theme(colors.primary/50%))]"}`}
     >
-      {properties.children}
+      <InnerDraggable>{properties.children}</InnerDraggable>
     </div>
   );
 }
