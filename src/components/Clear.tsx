@@ -19,7 +19,7 @@ export function Clear() {
 
   return (
     <div
-      className={`rounded-md px-4 py-2 transition hover:text-primary ${dragging ? "bg-primary text-white" : "bg-slate-100"}`}
+      className={`rounded-md px-4 py-2 transition ${dragging ? "bg-primary text-white" : "bg-slate-100 hover:text-primary"}`}
     >
       <EraserIcon />
     </div>
